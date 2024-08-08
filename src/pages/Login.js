@@ -1,9 +1,12 @@
 import React from "react"
+import NavBar from "./NavBar"
 
 function Login(){
     return (
         <div>
-            <header></header>
+            <header>
+                <NavBar/>
+            </header>
             <main>
                 <h1>Login</h1>
                 <form>

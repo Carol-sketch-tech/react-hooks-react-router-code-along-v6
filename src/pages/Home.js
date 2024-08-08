@@ -1,6 +1,8 @@
 import React from "react"
 import { useState, useEffect } from "react";
 import UserCard from "../components/UserCard";
+import NavBar from "./NavBar"
+
 
 function Home() {
   const [users, setUsers] = useState([])
@@ -19,10 +21,10 @@ function Home() {
   return (
     <>
       <header>
-        {/* place NavBar here */}
+        <NavBar/>
       </header>
       <main>
-        <h1>Home!</h1>
+        <h1> This is my Home page.</h1>
         {userList}
       </main>
     </>

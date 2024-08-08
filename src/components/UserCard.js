@@ -2,6 +2,9 @@ import React from "react"
 import {Link} from "react-router-dom"
 
 function UserCard({user}) {
+  if(!user){
+    return null;
+  }
   return (
     <article>
         <h2>{user.name}</h2>
